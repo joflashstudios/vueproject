@@ -20,14 +20,15 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import helpful from "../modules/dependency"
+let twelve : number = helpful.getTwelve();
 
 export default {
   name: 'hello',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App' + helpful.getTwelve().toString()
+      msg: 'Welcome to Your Vue.js App' + twelve
     }
   }
 }
