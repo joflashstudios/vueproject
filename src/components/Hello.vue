@@ -21,11 +21,13 @@
 </template>
 
 <script>
+import helpful from "../modules/dependency"
+
 export default {
   name: 'hello',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App' + helpful.getTwelve().toString()
     }
   }
 }
